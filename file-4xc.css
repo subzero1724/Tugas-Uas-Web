@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+ }
+ 
+ .store {
+  width: 100%;
+ }
+ 
+ .header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+ }
+ 
+ .body {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ }
+ 
+ .game {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+ }
+ 
+ .game img {
+  width: 100%;
+ }
+ 
+ .game h2 {
+  margin: 10px 0;
+ }
+ 
+ .game p {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+ }
+ 
+ .add-to-cart {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+ }
+ 
+ .add-to-cart:hover {
+  background-color: #444;
+  cursor: pointer;
+ }
