@@ -6,7 +6,7 @@ class Database {
     private $database = "peweb";
     public $conn;
 
-    // Constructor untuk membuat koneksi
+    // Constructor to establish the connection
     public function __construct() {
         $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->database);
 
@@ -16,12 +16,12 @@ class Database {
         }
     }
 
-    // Metode untuk menutup koneksi
+    // Method to close the connection
     public function closeConnection() {
         $this->conn->close();
     }
 
-    // Metode untuk mengeksekusi kueri
+    // Method to execute a query
     public function executeQuery($sql) {
         $result = $this->conn->query($sql);
 
