@@ -84,13 +84,13 @@ header .navbar a:hover{
     color:var(--aqua);
 }
 
-header .icons a{
+header .icons a, .icons .cart-btn{
     font-size: 2.5rem;
     color:#333;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
 }
 
-header .icons a:hover{
+header .icons a:hover, .icons .cart-btn:hover{
     color:var(--aqua);
 }
 
@@ -191,6 +191,17 @@ header .fa-bars{
     line-height: 1.5;
 }
 
+.icons form button {
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;    
+}
+
+.icons .cart-btn:hover  {
+    background-color: var(--aqua);
+}
+
 
 .icons-container{
     background:#eee;
@@ -276,7 +287,7 @@ header .fa-bars{
     bottom:0;
 }
 
-.products .box-container .box .image .icons a{
+.products .box-container .box .image .icons a, .icons .cart-btn{
     height: 5rem;
     line-height: 5rem;
     font-size: 2rem;
@@ -291,7 +302,7 @@ header .fa-bars{
     width:100%;
 }
 
-.products .box-container .box .image .icons a:hover{
+.products .box-container .box .image .icons a:hover, .icons .cart-btn:hover{
     background:#333;
 }
 
@@ -593,6 +604,3 @@ header .fa-bars{
 .shopping-cart .remove-item:hover {
     color: var(--primary);
 }
-
-
-
