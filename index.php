@@ -172,11 +172,11 @@ if(isset($_POST['cart'])){
                             <img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="">
                                 <div class="icons">
                                     <a href="#" class="fas fa-heart"></a>
-                                    <form action="index.php" method="post">
+                                    <form action="index.php" method="post" class="cart-btn">
                                         <input type="hidden" name="Product_Name" value='.$row['name'].'>
                                         <input type="hidden" name="price" value='.$row['price'].'>
                                         <input type="hidden" name="image" value='. base64_encode($row['image']).'>
-                                        <button name="cart" class="tombol">add to cart</button>
+                                        <button name="cart">add to cart</button>
                                     </form>
 
                                     <a href="#" class="fas fa-share"></a>
